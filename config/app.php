@@ -163,8 +163,6 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
-        //Yajra\DataTables\DataTablesServiceProvider::class,
-        Yajra\Datatables\DatatablesServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -180,7 +178,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        TechScope\SqlServer\SqlServerServiceProvider::class
+        // TechScope\SqlServer\SqlServerServiceProvider::class
+        Yajra\Datatables\DataTablesServiceProvider::class,
 
     ],
 

@@ -9,7 +9,6 @@
         "acacha/admin-lte-template-laravel": "4.*",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "techscope/laravel-sqlserver": "dev-master",
         "yajra/laravel-datatables-oracle": "~7.0"
     },
     "require-dev": {
