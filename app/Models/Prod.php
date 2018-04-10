@@ -18,4 +18,8 @@ class Prod extends Model
 	public function ALLPRICE(){
 		return $this->hasMany('App\Models\PRICE','FCPROD','FCSKID');
 	}
+	public function PRIECT_Lll(){
+		// $users = App\User::LASTEST('admin')->get();
+		return $this->ALLPRICE()->Lll();
+	}
 }
