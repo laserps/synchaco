@@ -140,6 +140,6 @@ Route::group(['middleware' => 'auth'], function(){
 
 Route::resource('log','LogController');
 Route::get('alllog','LogController@datatable');
-Route::get('layout',function(){
-    return View::make('layout');
+Route::get('mainone',function(){
+    return View::make('main_one');
 });
