@@ -73,29 +73,33 @@ return [
             'sslmode' => 'prefer',
         ],
 
+        //startfoma
         'foma' => [
-            'driver' => 'sqlsrv',
-            // 'odbc_driver'   => '{ODBC Driver 11 for SQL Server}',
-            'host' => '202.183.186.84',
-            'port' => '8089',
-            'database' => 'formula',
-            'username' => 'sa',
-            'password' => 'sa',
-            'charset' => 'utf8',
-            'prefix' => '',
-            'TrustServerCertificate' => 'yes',
+           'driver' => 'sqlsrv',
+           'host' => 'safsdaf',
+           'port' => 'sadfsdafsssssss',
+           'database' => '234234sssssss',
+           'username' => 'safsdafsadssssss',
+           'password' => 'sda234234sfsdfsfsfsd',
+           'charset' => 'utf8',
+           'prefix' => '',
+           'TrustServerCertificate' => 'yes',
         ],
+        //endfoma
 
-        'magento'   => [
-            'driver'   => 'mysql',
-            'host'     => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'magento',
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-
+        //startmagento
+        'foma' => [
+           'driver' => 'sqlsrv',
+           'host' => 'safsdaf',
+           'port' => 'sadfsdafsssssss',
+           'database' => '234234sssssss',
+           'username' => 'safsdafsadssssss',
+           'password' => 'sda234234sfsdfsfsfsd',
+           'charset' => 'utf8',
+           'prefix' => '',
+           'TrustServerCertificate' => 'yes',
         ],
+        //endmagento
 
         ],
 

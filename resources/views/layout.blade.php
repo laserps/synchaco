@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>@yield('title')</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="stylesheet" href="{{asset('template/AdminLTE-2.4.3/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('template/AdminLTE-2.4.3/bower_components/font-awesome/css/font-awesome.min.css')}}">
@@ -20,6 +20,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{asset('template/AdminLTE-2.4.3/dist/css/AdminLTE.min.css')}}">
 
   <link rel="stylesheet" href="{{asset('template/AdminLTE-2.4.3/dist/css/skins/skin-black.min.css')}}">
+  
+  <link rel="stylesheet" href="{{asset('plugins/sweetalert2/dist/sweetalert2.css')}}">
 
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -106,10 +108,7 @@ desired effect
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Page Header
-        <small>Optional description</small>
-      </h1>
+      @yield('contentheader')
     </section>
 
     <!-- Main content -->
@@ -219,6 +218,11 @@ desired effect
 <script src="{{asset('template/AdminLTE-2.4.3/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('template/AdminLTE-2.4.3/dist/js/adminlte.min.js')}}"></script>
+
+<script src="{{asset('plugins/sweetalert2/dist/sweetalert2.js')}}"></script>
+<script>
+  var url_gb = "{{url('')}}";
+</script>
 @yield('jsbottom')
 </body>
 </html>

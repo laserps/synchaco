@@ -63,6 +63,11 @@ return [
             'bucket' => env('AWS_BUCKET'),
         ],
 
+        'config' => [
+            'driver' => 'local',
+            'root' => config_path(),
+        ],
+
     ],
 
 ];

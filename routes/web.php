@@ -140,6 +140,13 @@ Route::group(['middleware' => 'auth'], function(){
 
 Route::resource('log','LogController');
 Route::get('alllog','LogController@datatable');
+
+Route::post('settingfoma','DBController@setting_foma');
+Route::post('settingmagento','DBController@setting_magento');
+Route::resource('settingdb','DBController');
+
 Route::get('mainone',function(){
     return View::make('main_one');
 });
+
+Route::get('path','FunctionController@edit');
