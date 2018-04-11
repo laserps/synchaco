@@ -1,7 +1,7 @@
 @extends('layout')
 
 <!-- app name / title -->
-@section('title', 'Page Title')
+@section('title', 'Datatable')
 
 <!-- css -->
 @section('cssbottom')
@@ -12,7 +12,7 @@
 @section('content')
 <section class="content">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-6">
             <div class="box">
                 <div class="box-header">
                 <h3 class="box-title">Sync History</h3>
@@ -22,7 +22,7 @@
                 <table class="table table-bordered table-striped dataTable" id="TableList">
                     <thead>
                         <tr>
-                            <th style="text-align: center;">ลำดับ</th>
+                            <th style="text-align: center;">no.</th>
                             <th style="text-align: center;">syncid</th>
                             <th style="text-align: center;">record</th>
                             <th style="text-align: center;">date</th>
